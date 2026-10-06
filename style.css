@@ -113,11 +113,11 @@ ul.candy li a {
 }    
 
 nav ul li a {
-    color: #063;
+    color: #062;
     display : inline-block;
     font-size : 24px;
     font-family: 'Emilys Candy', serif;
-    font-variant: small-caps; 
+    /* font-variant: small-caps; */
 }
 
 footer {
