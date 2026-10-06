@@ -77,6 +77,7 @@ p {
 
 table, iframe {
   margin: 0 auto;
+  box-shadow : 0 0 10px 1px #a00;
 }
 
 .cite {
@@ -88,7 +89,7 @@ table, iframe {
     padding-right: 8px;
 }
 
-body, nav, article, footer, nav ul li {
+body, nav, article, table, footer, nav ul li {
     border-radius : 20px; }
 
 nav {
