@@ -1,0 +1,127 @@
+@import url('https://googleapis.com');
+
+body {
+    margin : 0 auto;  
+    padding : 5px 15px;
+    width: clamp(320px, 90%, 1080px); 
+    box-shadow : 0 0 10px 3px #812;
+    background-color: #fab; 
+    font-family: "Belotta", sans-serif;
+    color : #000
+}
+
+h1, h2, h3 {
+    text-align : center;
+    margin-bottom : 5px;
+}
+
+p {font-size : 18px;}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+article {
+    margin : auto;
+    padding : 2%;
+    display: flex; 
+    flex-direction: column;
+    width : 75%;
+}
+
+ul.candy {
+    width : 65%;
+    margin : 0 auto;
+}
+
+ul.candy li:nth-child(odd) {
+  background-color: #f67;
+  font-style: italic;
+}
+
+ul.candy li:nth-child(even) {
+  background-color: #f89;
+}
+
+.sidebar {
+    margin : auto;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 5px 0px 5px -4px #812
+}
+
+.sidebar img {
+  height: 220px;
+  width: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  box-shadow : 0 0 10px 2px #812;
+}
+
+td img {
+    height: 260px;
+    width: auto;
+    object-fit: contain;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 1em;
+}
+
+table, iframe {
+  margin: 0 auto;
+}
+
+.cite {
+    font-size : 12px;
+    font-style : italic;
+    font-weight : bold;
+    text-align: right;
+    padding-right: 8px;
+}
+
+body, nav, article, footer, nav ul li {
+    border-radius : 20px; }
+
+nav {
+    background : #f45;
+    padding : 0 5px;
+}
+
+ul {list-style: none;}
+
+td ul li {display: inline-block;}
+
+nav ul li {
+    display: inline-block;
+    background : #f89;  
+    margin : 1px 8px;
+    padding : 6px 4px 4px;
+    box-shadow : 0 0 4px 0.5px #812;
+}
+
+ul.candy li a {
+    color: #030
+}    
+
+nav ul li a {
+    color: #063;
+    display : inline-block;
+    font-size : 24px;
+    font-family: 'Emilys Candy', serif;
+    font-variant: small-caps; 
+}
+
+footer {
+    border : 3px solid #812;
+    background-color: #f47;
+    text-align : center;
+    padding : 8px;
+    display : flex;
+    justify-content : space-evenly;
+}
