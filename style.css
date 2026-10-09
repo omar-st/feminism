@@ -13,11 +13,25 @@ h1, h2, h3 {
     margin-bottom : 5px;
 }
 
-h1, footer h3, .emily {font-family: 'Emilys Candy', serif;}
-footer h3 {margin-top : 0px}
-#address {box-shadow: 0 -8px 6px -6px #812}
-p {font-size : 18px;}
+p {
+    font-size : 18px;
+    margin-top: 0;
+    margin-bottom: 1em;
+    border-radius : 10px;
+}
 
+hr {
+    width: 30%; 
+    display: block;
+    box-shadow : 0px 0px 4px 1.5px #812;
+}
+
+h1:hover { transform: scale(1.08);}
+h3:hover { font-style: italic;}
+article p:hover {box-shadow : 0px 4px 0px 0px #c02;}
+h1, footer h3, .emily {font-family: 'Emilys Candy', serif;}
+footer h3 {margin-top : 0px;}
+#address {box-shadow: 0 -8px 6px -6px #812;}
 
 .flex {
     display: flex;
@@ -28,57 +42,69 @@ ul.candy {
     width : 65%;
     margin : 0 auto;
 }
-
+ul.candy:hover {
+  box-shadow : 6px 0px 8px -4px #ff0;}
+ul.candy li {
+    padding-left : 1%;
+    border-radius : 4px; }
+ul.candy li:hover {
+    transform: scale(1.03); }
 ul.candy li:nth-child(odd) {
   background-color: #f67;
   font-style: italic;
 }
-
 ul.candy li:nth-child(even) {
-  background-color: #f89;
-}
+  background-color: #f89; }
+ul.candy li a {
+    color: #030
+}   
+
+header {padding-top: 3%; width: 50%;
+    margin-left: auto; margin-right: auto;  margin-bottom: 2%;
+    box-shadow : 0px 3px 0px -1px #c02;}
 
 article {
     margin : auto;
     padding : 2%;
     display: flex; 
     flex-direction: column;
-    width : 75%;
-}
+    width: 85%;
+} main article {width : 75%;}
 
 .sidebar {
     margin : auto;
     align-items: center;
     flex-direction: column;
     box-shadow: 5px 0px 5px -4px #812
+} .sidebar ul:hover {
+    font-style: oblique; 
+    font-weight: bold;
+    box-shadow : 1px 4px 1px 0px #a01;
 }
 
 .sidebar img {
   height: 220px;
   width: auto;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 5px;
-  margin-bottom: 10px;
+  border-radius : 10px;
   box-shadow : 0 0 10px 2px #812;
-}
-
-td img {
-    height: 260px;
-    width: auto;
-    object-fit: contain;
-}
-
-p {
-    margin-top: 0;
-    margin-bottom: 1em;
-}
+  margin-left: auto; margin-right: auto; margin-top: 5px; margin-bottom: 10px;
+} .sidebar img:hover {box-shadow : 0 0 10px 2px #812, 0px 10px 10px 0px #ff0;}
 
 table, iframe {
   margin: 0 auto;
   box-shadow : 0 0 10px 1px #a00;
 }
+tr:hover {
+  box-shadow : 0 0 10px 2px #ff0;}
+td img {
+    height: 260px;
+    width: auto;
+    object-fit: contain;
+    border-radius : 10px;
+}
+img:hover {
+    transform: scale(1.05); }
 
 .cite {
     font-size : 12px;
@@ -89,36 +115,44 @@ table, iframe {
     padding-right: 8px;
 }
 
-body, nav, article, table, footer, nav ul li {
+
+body, nav, header, article, table, footer, nav ul li, .sidebar ul {
     border-radius : 20px; }
 
 nav {
-    background : #f45;
-    padding : 0 5px;
-}
+    position: fixed;
+    top: 0;
+    width: 84%;
+    height: 6%;
+    line-height: 1.3em;
+    background: #f45;
+    border: 1px solid;
+} 
 
-ul {list-style: none;}
-
+nav:hover {
+    box-shadow : 0px 2px 6px 0px #ff0;}
+nav ul {margin-top: 3px;}
+ul {list-style: none;
+    padding-left: 5px;
+    margin-left: 0;}
 td ul li {display: inline-block;}
 
 nav ul li {
     display: inline-block;
     background : #f89;  
-    margin : 1px 8px;
-    padding : 6px 4px 4px;
+    margin : 1px 3px;
+    padding : 3px 4px;
     box-shadow : 0 0 4px 0.5px #812;
 }
-
-ul.candy li a {
-    color: #030
-}    
+nav ul li:hover {
+    transform: scale(1.08);
+} 
 
 nav ul li a {
     color: #062;
     display : inline-block;
-    font-size : 24px;
+    font-size : 20px;
     font-family: 'Emilys Candy', serif;
-    /* font-variant: small-caps; */
 }
 
 footer {
@@ -126,7 +160,9 @@ footer {
     background-color: #f47;
     text-align : center;
     padding : 8px;
-}
+} footer:hover {
+    box-shadow : 0px 3px 8px 0px #ff0;
+    transform: scale(1.02); }
 
 footer div {
     font-size: 17px;
