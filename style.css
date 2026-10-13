@@ -39,6 +39,9 @@ footer h3 {margin-top : 0px;}
     .flex {
         display: flex; 
         align-items: flex-start; }
+    nav {
+        position: fixed;
+    }
 }
 
 ul.candy {
@@ -129,7 +132,6 @@ body, nav, article, table, footer, nav ul li, .sidebar ul {
     border-radius : 20px; }
 
 nav {
-    position: fixed;
     top: 0;
     left: 0;
     right: 0;
