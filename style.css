@@ -98,7 +98,7 @@ article {
 table {
   margin: 0 auto;
   table-layout: fixed;
-  width: 100vw;
+  width: 80vw;
   height: 100vh;
   border-collapse: collapse;
   box-shadow : 0 0 10px 1px #a00;
