@@ -42,10 +42,11 @@ footer h3 {margin-top : 0px;}
     nav {
         position: fixed;
     }
+    ul.candy {
+        width : 80%; }
 }
 
 ul.candy {
-    width : 65%;
     margin : 0 auto;
 }
 ul.candy:hover {
