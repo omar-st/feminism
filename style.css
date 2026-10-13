@@ -1,3 +1,4 @@
+
 body {
     margin : 0 auto;  
     padding : 5px 15px;
@@ -94,17 +95,22 @@ article {
   margin-left: auto; margin-right: auto; margin-top: 5px; margin-bottom: 10px;
 } .sidebar img:hover {box-shadow : 0 0 10px 2px #812, 0px 10px 10px 0px #ff0;}
 
-table, iframe {
+table {
   margin: 0 auto;
+  table-layout: fixed;
+  width: 100vw;
+  height: 100vh;
+  border-collapse: collapse;
   box-shadow : 0 0 10px 1px #a00;
 }
 tr:hover {
   box-shadow : 0 0 10px 2px #ff0;}
 td img {
-    height: 260px;
-    width: auto;
-    object-fit: contain;
-    border-radius : 10px;
+    width: 100%;
+    height: 100%;
+    display: block;      
+    object-fit: cover;  
+    border-radius : 10px; 
 }
 img:hover {
     transform: scale(1.05); }
