@@ -34,9 +34,12 @@ footer h3 {margin-top : 0px;}
 #address {box-shadow: 0 -8px 6px -6px #812;}
 
 
-.flex {
-    display: flex; 
-    align-items: flex-start; }
+@media all and (min-width: 800px) {
+    .flex {
+        display: flex; 
+        align-items: flex-start; }
+}
+
 ul.candy {
     width : 65%;
     margin : 0 auto;
